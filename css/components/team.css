@@ -1,46 +1,53 @@
 .team {
-    margin: 100px 0;
+    margin-bottom: 100px;
 }
 .team.team-wrapper {
     display: flex;
 }
+.team-header {
+    margin-bottom: 70px;
+}
 .team .team-wrapper .team-header h2 {
-    margin-top: 0px;
-    text-align: left;
     font-family: sans-serif;
     font-size: 40px;
     color: #595959;
     font-weight: 600;
+    margin-bottom: 40px;
 }
 .team .team-wrapper .team-header p {
     max-width: 450px;
-    margin-top: 40px;
     font-family: sans-serif;
     color: #737373;
     font-size: 15px;
     line-height: 21px;
-    margin: 40px 0 40px 10px;
+    margin-bottom: 30px;
+    padding-left: 15px;
 }
 .team .team-wrapper .team-header .short-line {
     height: 2px;
     width: 130px;
-    margin: 30px 0 70px 10px;
     background-color: var(--details-color);
+    margin-left: 15px;
+    
 }
 .team .team-wrapper .team-photo {
     display: flex;
     justify-content: space-between;
     margin-left: 10px;
+    width: 100%;
 }
 .team .team-wrapper .team-photo .left-side {
-    width: 321px;
-    height: 458px;
+    width: 30%
+}
+.left-side img {
+    width: 100%;
 }
 .team .team-wrapper .team-photo .right-side {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-left: 70px;
+    width: 70%;
 }
 .team .team-wrapper .team-photo .right-side h3 {
     color: #727272;
@@ -69,9 +76,14 @@
 }
 .team .team-wrapper .team-photo .right-side .photo-box {
     display: flex;
+    width: 100%;
 }
 .team .team-wrapper .team-photo .right-side .wrapper {
     position: relative;
+    width: 25%;
+}
+.team .team-wrapper .team-photo .right-side .wrapper:not(:last-child) {
+    margin-right: 20px;
 }
 .team .team-wrapper .team-photo .right-side .wrapper:hover .label {
     opacity: 1;
@@ -80,7 +92,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 197px;
+    width: 100%;
     padding: 10px 0;
     text-align: center;
     opacity: 0;
@@ -89,7 +101,5 @@
     color: white;
 }
 .team .team-wrapper .team-photo .right-side .photo {
-    width: 197px;
-    height: 214px;
-    margin-right: 20px;
+    width: 100%;
 }
